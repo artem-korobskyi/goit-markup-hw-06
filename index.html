@@ -48,7 +48,43 @@
 								<use href="./image/icons.svg#icon-modal"></use>
 							</svg>
 						</button>
+						<div class="modal-data">
+							<p class="modal-data-title">
+								Leave your contacts and we will call you back
+							</p>
+							<form class="modal-data-form" autocomplete="on">								
+									<label class="form-field">																		
+									<input class="form-input" type="text" name="name" autofocus>
+																		<svg class="icon-input-name" width="12" height="12">
+										<use href="./image/icons.svg#icon-input-personal"></use>
+									</svg><span class="form-label">Name</span>			
+									</label>
+								<div class="form-field">
+									<label class="" for="tel"> Phone</label>
+									<svg>
+										<use class="icon-input-name" href="./image/icons.svg#icon-input-phone2"></use>
+									</svg>
+									<input class="form-input" type="tel" name="tel" id="tel">								
+								</div>	
+								<div class="form-field">
+									<label class="form-label" for="email">Email</label>
+									<input class="form-input" type="email" name="email" id="email">								
+								</div>
+								<div class="form-field">
+								<label class="form-label" for="textarea" >Comment</label>
+								<textarea class="form-input-textarea" name="texarea" id="textarea" cols="" rows="" placeholder="Text input"></textarea>
+								</div>
+								<div class="form-checkbox">
+									<label class="form-label" for="policy"></label>																	
+									<input class="form-input-checkbox" type="checkbox" name="policy" id="policy">
+									<span class="form-checkbox-text">I accept the terms and conditions of the <a href="#">Privacy Policy</a></span>
+									</div>
+								<div class="modal-button-policy">
+								<button class="modal-button-send" type="submit">Send</button>
+								</div>								
+							</form>
 						</div>
+						</div>						
 				</div>
 			</section>
 			<section class="advan-sec section">
@@ -355,6 +391,16 @@
 								</li>	
 				</ul>
 			</div>
+			<div class="subscribe-container">
+				<p class="footer-social-title">Subscribe</p>
+				<form class="subscribe">
+					<input class="input-footer" type="mail" name="email" placeholder="E-mail" required>
+					<button class="subscribe-button" type="submit">Subscribe
+						<svg class="subscribe-icon" width="24" height="24">
+							<use class="subscribe-icon-item" href="./image/icons.svg#icon-footer-envelope"></use>
+						</svg>						
+					</button>
+				</form>
 			</div>
 		</footer>
 		<script src="./modal.js"></script>

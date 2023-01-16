@@ -207,6 +207,8 @@ body {
 	background-repeat: no-repeat;
 }
 
+/* Modal */
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -229,15 +231,19 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	min-height: 576px;
-	min-width: 408px;
-	padding: 15px;
+	/* height: 584px; */
+	width: 408px;
+	padding-left: 24px;
+	padding-right: 24px;
 	border-radius: 4px;
 
 	background-color: rgba(252, 252, 252, 1);
 }
 
 .modal-close {
+	position: absolute;
+	top: 24px;
+    left: 360px;    
 	cursor: pointer;
 	border-radius: 50%;
 	width: 24px;
@@ -267,6 +273,102 @@ body {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.modal-data-title {
+	padding-top: 72px;
+	padding-bottom: 14px;
+	font-family: "Roboto";
+	font-weight: 500;
+	font-size: 16px;	
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: rgba(46, 47, 66, 1);
+}
+
+.modal-data-form {
+	margin: 0;
+	width: 408px;
+}
+
+.form-field {
+	position: relative;
+	display: block;
+	flex-direction: column;
+	width: 360px;
+}
+
+.form-label {
+	position: absolute;
+	top: 50%;
+	left: 38px;
+
+	transform: translateY(-50%);
+
+	padding-bottom: 4px;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.01em;
+	color: #8E8F99;
+}
+
+.form-input {
+	width: 100%;
+	margin: 0;	
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: rgba(33, 33, 33, 0.2) solid 1px;
+	padding-left: 19px; 
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-input-name {
+	position: absolute;
+	top: 50%;
+	left: 19px;
+	width: 18px;
+	height: 18px;
+
+	transform: translateY(-50%);
+}
+
+.form-input-textarea {
+	resize: none;
+	width: 360px;
+	height: 120px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	padding-top: 8px;
+	border-radius: 4px;
+	border: rgba(33, 33, 33, 0.2) solid 1px;
+}
+
+.form-input-textarea::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 12px;
+	}
+
+
+.form-input-checkbox {
+	position: absolute;
+	left: 24px;
+	}
+
+.form-checkbox-text {
+	display: block;
+	margin-bottom: 24px;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.01em;
+	color: #8E8F99;
+}
+
+
 .hero-title {
 	width: 496px;
 	margin: 0 auto;
@@ -278,7 +380,8 @@ body {
 	letter-spacing: 0.02em;
 	}
 
-.button {
+.button,
+.modal-button-send {
 	display: flex;
 	margin: 0 auto;
 	cursor: pointer;
@@ -295,6 +398,8 @@ body {
 	letter-spacing: 0.04em;
 	text-decoration: none;
 	gap: 10px;	
+
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -550,6 +655,65 @@ body {
     background-color: #31D0AA;    
 }
 
+/* Subscribe */
+
+.subscribe-container {
+	padding-left: 80px;
+}
+
+.subscribe {
+	display: flex;
+}
+
+.subscribe-button {
+	display: flex;     
+    align-items: center;       
+    padding: 8px 24px;  
+    gap: 16px;  
+    margin-left: 24px;
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;    
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: var(--primary-brand-click);
+    cursor: pointer;       
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover {
+    background-color: var(--pressed-state);
+}
+
+.subscribe-icon {
+	margin: 0;
+}
+
+
+.subscribe-icon-item {
+	fill: #fff;
+}
+
+.input-footer {
+	display: flex;
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px 8px 16px;   
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--title-text-color)
+}
 
 /* Portfolio styles */
 
